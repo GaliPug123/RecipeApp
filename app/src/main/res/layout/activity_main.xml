@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34c759"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="176dp"
+        android:layout_alignBottom="@+id/maxCaloriesEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="190dp"
+        android:src="@drawable/img_1" />
+
+    <ImageView
+        android:id="@+id/titleTextView"
+        android:layout_width="139dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/img_12"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="Enter recipe name/ingredient"
+        android:paddingStart="16dp"
+        android:paddingEnd="48dp" />
+
+    <EditText
+        android:id="@+id/cuisineEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchEditText"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="Enter cuisine type (e.g., Italian)"
+        android:paddingStart="16dp"
+        android:paddingEnd="48dp" />
+
+    <EditText
+        android:id="@+id/maxTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cuisineEditText"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="Enter max preparation time in minutes"
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:paddingEnd="48dp" />
+
+    <EditText
+        android:id="@+id/maxCaloriesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maxTimeEditText"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:hint="Enter max calories"
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:paddingEnd="48dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maxCaloriesEditText"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/rounded_button_background"
+        android:backgroundTint="#004d00"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="Search"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/icono1"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/maxCaloriesEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="332dp"
+        android:layout_marginBottom="193dp"
+        android:src="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/myicono2"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/icono1"
+        android:layout_alignEnd="@+id/icono1"
+        android:layout_alignBottom="@+id/maxCaloriesEditText"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="130dp"
+        android:src="@drawable/img_2" />
+
+    <ImageView
+        android:id="@+id/myicono3"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/icono1"
+        android:layout_alignEnd="@+id/icono1"
+        android:layout_alignBottom="@+id/maxCaloriesEditText"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="67dp"
+        android:src="@drawable/img_3" />
+
+    <ImageView
+        android:id="@+id/myicono4"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/icono1"
+        android:layout_alignEnd="@+id/icono1"
+        android:layout_alignBottom="@+id/maxCaloriesEditText"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/img_4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchButton"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+</RelativeLayout>
+
